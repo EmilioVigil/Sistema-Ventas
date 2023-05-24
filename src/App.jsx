@@ -1,11 +1,10 @@
+import { RoutesApp } from "./routes/Routes"
 
-function App() {
+
+export function App() {
 
   return (
-    <>
-      <p>Hola</p>
-
-    </>
+    <RoutesApp />
   )
 }
 
@@ -13,7 +12,7 @@ function App() {
 
 
 
-export default App
+
 
 
 
