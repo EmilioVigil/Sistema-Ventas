@@ -26,7 +26,7 @@ const SidebarWrapper = styled.div`
  left: 0;
  height: 100vh;
  width: 300px;
- background-color: #f1f1f1;
+ background-color: #18273E;
  overflow: hidden;
  z-index: 999;
 ${(props) =>
@@ -71,7 +71,7 @@ const NavItem = styled.div`
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  color: #333;
+  color: #fff;
   transition: background-color 0.3s ease;
 
   &:hover {
@@ -119,7 +119,7 @@ const DesktopNavbar = styled.div`
     left: 0;
     height: 100vh;
     width: 300px;
-    background-color: #f1f1f1;
+    background-color: #18273E;
     z-index: 999;
     padding-top: 20px;
     flex-direction: column;
@@ -130,7 +130,7 @@ const DesktopNavItem = styled.div`
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  color: #333;
+  color: #fff;
   transition: background-color 0.3s ease;
 
   &:hover {
