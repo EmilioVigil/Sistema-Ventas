@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom"
 
-
 export function Admin() {
 
     const navigate = useNavigate();
