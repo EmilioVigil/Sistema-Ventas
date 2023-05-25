@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars, FaHome, FaUser, FaCog } from 'react-icons/fa';
+import { FaChartLine, FaBars } from 'react-icons/fa';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { AiOutlineUnorderedList } from 'react-icons/ai';
 import { IoMdClose } from 'react-icons/io';
+
 import {
     SidebarWrapper,
     CloseButton,
@@ -38,21 +41,21 @@ export function SideBar() {
                 </CloseButton>
                 <NavItem>
                     <Icon>
-                        <FaHome />
+                        <FaChartLine />
                     </Icon>
-                    Home
+                    Dashboard
                 </NavItem>
                 <NavItem>
                     <Icon>
-                        <FaUser />
+                        <AiOutlineShoppingCart />
                     </Icon>
-                    Profile
+                    Ventas
                 </NavItem>
                 <NavItem>
                     <Icon>
-                        <FaCog />
+                        <AiOutlineUnorderedList />
                     </Icon>
-                    Settings
+                    Lista de productos
                 </NavItem>
             </SidebarWrapper>
 
@@ -60,21 +63,21 @@ export function SideBar() {
             <DesktopNavbar>
                 <DesktopNavItem>
                     <DesktopIcon>
-                        <FaHome />
+                        <FaChartLine />
                     </DesktopIcon>
-                    Home
+                    <span>Dashboard</span>
                 </DesktopNavItem>
                 <DesktopNavItem>
                     <DesktopIcon>
-                        <FaUser />
+                        <AiOutlineShoppingCart />
                     </DesktopIcon>
-                    Profile
+                    <span>Ventas</span>
                 </DesktopNavItem>
                 <DesktopNavItem>
                     <DesktopIcon>
-                        <FaCog />
+                        <AiOutlineUnorderedList />
                     </DesktopIcon>
-                    Settings
+                    <span>Lista de productos</span>
                 </DesktopNavItem>
             </DesktopNavbar>
             <MainContent>

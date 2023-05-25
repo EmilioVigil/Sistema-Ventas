@@ -1,0 +1,184 @@
+{
+    "productos": [
+        {
+            "nombre": "Coca-Cola x500",
+            "precio": 100,
+            "empresa": "Coca-Cola",
+            "stock": 50
+        },
+        {
+            "nombre": "Pepsi x500",
+            "precio": 95,
+            "empresa": "PepsiCo",
+            "stock": 70
+        },
+        {
+            "nombre": "Sprite x500",
+            "precio": 90,
+            "empresa": "Coca-Cola",
+            "stock": 30
+        },
+        {
+            "nombre": "Fanta x500",
+            "precio": 85,
+            "empresa": "Coca-Cola",
+            "stock": 40
+        },
+        {
+            "nombre": "Maní salado x100g",
+            "precio": 30,
+            "empresa": "Fulano Foods",
+            "stock": 100
+        },
+        {
+            "nombre": "Chocolatín x25g",
+            "precio": 10,
+            "empresa": "ChocoDelight",
+            "stock": 80
+        },
+        {
+            "nombre": "Alfajor clásico",
+            "precio": 25,
+            "empresa": "Dulce Tentación",
+            "stock": 60
+        },
+        {
+            "nombre": "Galletitas surtidas x500g",
+            "precio": 50,
+            "empresa": "Delicias Crispy",
+            "stock": 90
+        },
+        {
+            "nombre": "Caramelos masticables x50",
+            "precio": 15,
+            "empresa": "Sabores Dulces",
+            "stock": 120
+        },
+        {
+            "nombre": "Pochoclo dulce x200g",
+            "precio": 40,
+            "empresa": "Palomitas Felices",
+            "stock": 60
+        },
+        {
+            "nombre": "Agua mineral x500ml",
+            "precio": 20,
+            "empresa": "Fresh Springs",
+            "stock": 100
+        },
+        {
+            "nombre": "Jugo de naranja x1L",
+            "precio": 45,
+            "empresa": "Fruit Delight",
+            "stock": 50
+        },
+        {
+            "nombre": "Chicles sabor menta x10",
+            "precio": 5,
+            "empresa": "MentaFresh",
+            "stock": 150
+        },
+        {
+            "nombre": "Papel higiénico x4 rollos",
+            "precio": 60,
+            "empresa": "Soft & Strong",
+            "stock": 30
+        },
+        {
+            "nombre": "Revista de actualidad",
+            "precio": 25,
+            "empresa": "MediaWorld",
+            "stock": 20
+        },
+        {
+            "nombre": "Café instantáneo x200g",
+            "precio": 80,
+            "empresa": "Café del Mundo",
+            "stock": 40
+        },
+        {
+            "nombre": "Paquete de cigarrillos",
+            "precio": 100,
+            "empresa": "Tabacalera Nacional",
+            "stock": 50
+        },
+        {
+            "nombre": "Barrita de cereal x25g",
+            "precio": 15,
+            "empresa": "Fit & Healthy",
+            "stock": 80
+        },
+        {
+            "nombre": "Cerveza artesanal x500ml",
+            "precio": 70,
+            "empresa": "Brewmasters",
+            "stock": 60
+        },
+        {
+            "nombre": "Yogur de frutas x200g",
+            "precio": 35,
+            "empresa": "Yogurísimo",
+            "stock": 70
+        },
+        {
+            "nombre": "Helado de vainilla x500ml",
+            "precio": 50,
+            "empresa": "Frosty Delights",
+            "stock": 40
+        },
+        {
+            "nombre": "Paquete de papas fritas x80g",
+            "precio": 25,
+            "empresa": "Crunchy Crisps",
+            "stock": 90
+        },
+        {
+            "nombre": "Pan lactal x500g",
+            "precio": 40,
+            "empresa": "Panadería Don Pepe",
+            "stock": 70
+        },
+        {
+            "nombre": "Caramelos de miel x50",
+            "precio": 10,
+            "empresa": "Sweet Honey",
+            "stock": 120
+        },
+        {
+            "nombre": "Jabón de tocador x100g",
+            "precio": 15,
+            "empresa": "Fresh Clean",
+            "stock": 50
+        },
+        {
+            "nombre": "Bolsa de caramelos surtidos",
+            "precio": 5,
+            "empresa": "CandyLand",
+            "stock": 200
+        },
+        {
+            "nombre": "Barra de chocolate negro x50g",
+            "precio": 30,
+            "empresa": "Dark Delights",
+            "stock": 60
+        },
+        {
+            "nombre": "Caramelos de menta x100g",
+            "precio": 20,
+            "empresa": "MentaFresca",
+            "stock": 80
+        },
+        {
+            "nombre": "Gaseosa de naranja x500ml",
+            "precio": 30,
+            "empresa": "FruitiBubbles",
+            "stock": 40
+        },
+        {
+            "nombre": "Cerveza rubia x330ml",
+            "precio": 55,
+            "empresa": "Golden Brew",
+            "stock": 50
+        }
+    ]
+}

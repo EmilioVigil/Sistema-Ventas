@@ -108,12 +108,13 @@ const ToggleButton = styled.button`
   }
 `;
 
-const DesktopNavbar = styled.div`
+const DesktopNavbar = styled.nav`
   display: none;
 
   @media (min-width: 769px) {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap : 3rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -122,16 +123,17 @@ const DesktopNavbar = styled.div`
     background-color: #18273E;
     z-index: 999;
     padding-top: 20px;
-    flex-direction: column;
   }
 `;
 
 const DesktopNavItem = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 10px 20px;
   color: #fff;
   transition: background-color 0.3s ease;
+
+
 
   &:hover {
     background-color: #ddd;
@@ -139,7 +141,7 @@ const DesktopNavItem = styled.div`
 `;
 
 const DesktopIcon = styled.div`
-  margin-right: 10px;
+  margin-right: 1rem;
 `;
 
 
