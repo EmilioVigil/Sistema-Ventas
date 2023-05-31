@@ -1,20 +1,11 @@
-import { useNavigate } from "react-router-dom"
+import { SideBar } from "../navBar/NavBar";
+
+
 
 export function Admin() {
-
-    const navigate = useNavigate();
-
-    const handleClick = (e) => {
-        e.preventDefault()
-        return navigate('/admin/ventas')
-
-    }
-
-
     return (
         <>
-            <p>Admin</p>
-            <button onClick={handleClick} >Inicio</button>
+            <SideBar />
         </>
     )
 }

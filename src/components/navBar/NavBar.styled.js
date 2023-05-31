@@ -73,7 +73,6 @@ const NavItem = styled.div`
   padding: 10px 20px;
   color: #fff;
   transition: background-color 0.3s ease;
-
   &:hover {
     background-color: #ddd;
   }
@@ -132,6 +131,7 @@ const DesktopNavItem = styled.div`
   padding: 10px 20px;
   color: #fff;
   transition: background-color 0.3s ease;
+  cursor:pointer;
 
 
 

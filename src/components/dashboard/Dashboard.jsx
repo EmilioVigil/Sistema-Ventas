@@ -6,7 +6,7 @@ export function Dashboard() {
 
     const handleClick = (e) => {
         e.preventDefault()
-        return navigate('/admin/ventas')
+        return navigate('/')
     }
 
     return (
