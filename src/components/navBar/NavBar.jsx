@@ -101,6 +101,7 @@ export function SideBar() {
             </DesktopNavbar >
             <MainContent>
                 <Outlet />
+                <p>Hola</p>
             </MainContent>
         </>
     )
