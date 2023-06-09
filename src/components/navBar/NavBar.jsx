@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+
+// Icons
 import { FaChartLine, FaBars } from 'react-icons/fa';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { AiOutlineUnorderedList } from 'react-icons/ai';
 import { IoMdClose } from 'react-icons/io';
-import { Outlet } from "react-router-dom";
-
+// Styled
 import {
     SidebarWrapper,
     CloseButton,
     NavItem,
     Icon,
-    MainContent,
     ToggleButton,
     DesktopNavbar,
     DesktopNavItem,
-    DesktopIcon
+    DesktopIcon,
+    Detail
 } from './NavBar.styled'
 
 
@@ -99,10 +101,9 @@ export function SideBar() {
                     <span onClick={handleList} >Lista de productos</span>
                 </DesktopNavItem>
             </DesktopNavbar >
-            <MainContent>
+            <Detail>
                 <Outlet />
-                <p>Hola</p>
-            </MainContent>
+            </Detail>
         </>
     )
 }

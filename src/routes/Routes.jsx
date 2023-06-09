@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
-
 // Components
-import { Login } from "../login/Login"
+import { Login } from "../components/login/Login"
 import { Admin } from "../components/admin/Admin"
 import { Dashboard } from "../components/dashboard/Dashboard"
 import { Ventas } from "../components/ventas/Ventas"

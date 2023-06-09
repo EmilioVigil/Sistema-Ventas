@@ -82,15 +82,6 @@ const Icon = styled.div`
   margin-right: 10px;
 `;
 
-const MainContent = styled.div`
-  margin-left: 300px;
-  padding: 20px;
-  
-  @media (max-width: 768px) {
-    margin-left: 0;
-    padding: 20px;
-  }
-`;
 
 const ToggleButton = styled.button`
   background-color: transparent;
@@ -113,15 +104,12 @@ const DesktopNavbar = styled.nav`
   @media (min-width: 769px) {
     display: flex;
     flex-direction: column;
-    gap : 3rem;
-    position: fixed;
-    top: 0;
-    left: 0;
     height: 100vh;
-    width: 300px;
+    width:23rem;
+    gap : 3rem;   
     background-color: #18273E;
-    z-index: 999;
     padding-top: 20px;
+    margin : 0;
   }
 `;
 
@@ -144,16 +132,20 @@ const DesktopIcon = styled.div`
   margin-right: 1rem;
 `;
 
+const Detail = styled.div`
+  flex:1;
 
+`
 
 export {
   SidebarWrapper,
   CloseButton,
   NavItem,
   Icon,
-  MainContent,
   ToggleButton,
   DesktopNavbar,
   DesktopNavItem,
-  DesktopIcon
+  DesktopIcon,
+  Detail
+
 }
