@@ -106,9 +106,8 @@ const DesktopNavbar = styled.nav`
     flex-direction: column;
     height: 100vh;
     width:23rem;
-    gap : 3rem;   
-    background-color: #18273E;
-    padding-top: 20px;
+    gap : 5rem;   
+    background-color: #003D5B ;
     margin : 0;
   }
 `;
@@ -116,7 +115,7 @@ const DesktopNavbar = styled.nav`
 const DesktopNavItem = styled.div`
   display: flex;
   align-items: flex-start;
-  padding: 10px 20px;
+  padding: 1rem;
   color: #fff;
   transition: background-color 0.3s ease;
   cursor:pointer;
@@ -124,7 +123,7 @@ const DesktopNavItem = styled.div`
 
 
   &:hover {
-    background-color: #ddd;
+    background-color: #EDAE49;
   }
 `;
 
