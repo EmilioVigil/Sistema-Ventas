@@ -1,7 +1,7 @@
 // Styled
 import { Container, SectionConfig, FormConfig, ItemForm } from "./Ventas.styled"
 import { useState, useEffect } from "react"
-
+import { ProductList } from "./productlist/ProductList";
 
 export function Ventas() {
     const [fecha, setFecha] = useState(new Date().toISOString().split("T")[0]);
@@ -64,7 +64,9 @@ export function Ventas() {
                     </FormConfig>
                 </SectionConfig>
 
-                <section></section>
+                <section>
+                    <ProductList/>
+                </section>
                 <section></section>
             </Container >
         </>
