@@ -4,7 +4,7 @@ import { Login } from "../components/login/Login"
 import { Admin } from "../components/admin/Admin"
 import { Dashboard } from "../components/dashboard/Dashboard"
 import { Ventas } from "../components/ventas/Ventas"
-import { ProductList } from "../components/productList/ProductList"
+import { ListProduct } from "../components/listProduct/ListProduct"
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/admin/productList',
-                element: <ProductList />
+                element: <ListProduct />
             }
         ]
 

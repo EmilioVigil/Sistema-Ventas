@@ -23,6 +23,10 @@ const FormConfig = styled.form`
         gap: 5rem;
     }
 
+    input #fecha{
+        width: 10rem;
+    }
+
 `
 
 const ItemForm = styled.div`
