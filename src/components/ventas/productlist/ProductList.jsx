@@ -38,27 +38,7 @@ export function ProductList() {
                     </thead>
                     <tbody>
                         {/* PRODUCTOS */}
-                        <TableRow>
-                            <TableCell>Coca-cola x500</TableCell>
-                            <TableCell>1</TableCell>
-                            <TableCell>290</TableCell>
-                            <TableCell>300</TableCell>
 
-                        </TableRow>
-                        <TableRow>
-                            <TableCell>Coca-cola x500</TableCell>
-                            <TableCell>1</TableCell>
-                            <TableCell>290</TableCell>
-                            <TableCell>300</TableCell>
-
-                        </TableRow>
-                        <TableRow>
-                            <TableCell>Coca-cola x500</TableCell>
-                            <TableCell>1</TableCell>
-                            <TableCell>290</TableCell>
-                            <TableCell>300</TableCell>
-
-                        </TableRow>
                     </tbody>
                 </Table>
             </TableList>

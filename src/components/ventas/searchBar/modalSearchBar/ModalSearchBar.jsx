@@ -1,26 +1,28 @@
 import { useState, useEffect } from 'react'
-
-// MOCK
-import Mock from '../../../../../mock.json'
+import { UseProducts } from '../../../../hooks/UseProducts'
+import { ListOfProduct } from '../product/Product'
 
 // STYLES
 import { ModalWrapper, ModalContent } from "./ModalSearchBar.styled"
 
 export function ModalSearchBar({ closeModal }) {
 
-    const [input, setInput] = useState('')
-    const [products, setProducts] = useState([])
-    const handleClick = (e) => {
-        e.preventDefault()
-    }
+    const [search, setSearch] = useState('')
+    // PRODUCTOS
+    const { products, loading, getProducts } = UseProducts({ search })
+
 
     const handleInput = (e) => {
-        setInput(e.target.value)
+        setSearch(e.target.value)
     }
 
-    const handleSearch = () => {
+    const handleClick = (e) => {
+        e.preventDefault()
+        getProducts({ search })
 
     }
+
+
 
     return (
         <ModalWrapper >
@@ -30,15 +32,19 @@ export function ModalSearchBar({ closeModal }) {
                 <form action="">
                     <input type="text"
                         placeholder='Buscar producto...'
-                        value={input}
+                        value={search}
                         onChange={e => handleInput(e)}
                     />
                     <button onClick={handleClick} >Buscar</button>
-                    {
-                        products ? 'No hay productos..' : ''
-                    }
                 </form>
             </ModalContent>
+            <main>
+                {
+                    products ? 'Hay productos' : 'No hay productos...'
+
+                }
+
+            </main>
         </ModalWrapper>
     )
 }

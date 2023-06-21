@@ -31,7 +31,7 @@ export function Ventas() {
                             </ItemForm>
                             <ItemForm>
                                 <label htmlFor="">Punto de venta</label>
-                                <input type="text" value={'SAN MARTIN 410 - LA CALERA - CÓRDOBA'} />
+                                <input type="text" defaultValue={'SAN MARTIN 410 - LA CALERA - CÓRDOBA'} />
                             </ItemForm>
                             <ItemForm>
                                 <label htmlFor="">N° Comprobante</label>
@@ -40,9 +40,9 @@ export function Ventas() {
                             <ItemForm>
                                 <label htmlFor="">T.Factura</label>
                                 <select name="" id="">
-                                    <option value="">X</option>
-                                    <option value="">A</option>
-                                    <option value="">B</option>
+                                    <option >X</option>
+                                    <option >A</option>
+                                    <option >B</option>
                                 </select>
                             </ItemForm>
 
@@ -56,16 +56,16 @@ export function Ventas() {
                         <ItemForm>
                             <label htmlFor="">Forma de pago</label>
                             <select name="" id="">
-                                <option value="">Efectivo</option>
-                                <option value="">Debito</option>
-                                <option value="">Credito</option>
+                                <option >Efectivo</option>
+                                <option >Debito</option>
+                                <option >Credito</option>
                             </select>
                         </ItemForm>
                     </FormConfig>
                 </SectionConfig>
 
                 <section>
-                    <ProductList/>
+                    <ProductList />
                 </section>
                 <section></section>
             </Container >

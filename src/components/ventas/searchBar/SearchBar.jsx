@@ -37,7 +37,7 @@ export function SearchBar() {
     }
     return (
         <SectionSearchProduct>
-            <form action="">
+            <form >
                 <InputQuantity
                     type="number"
                     value={quantityProduct}
