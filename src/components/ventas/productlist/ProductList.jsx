@@ -1,5 +1,3 @@
-import { useState } from "react"
-import mock from '../../../../mock.json'
 import { SearchBar } from "../searchBar/SearchBar";
 
 import {
@@ -9,17 +7,7 @@ import {
 
 
 export function ProductList() {
-    // // AÑADIR PRODUCTOS AL ESTADO
-    // const addProduct = (productName, quantity, price) => {
-    //     const product = {
-    //         name: productName,
-    //         quantity: quantity,
-    //         price: price,
-    //         unitPrice: price,
-    //         totalPrice: price * quantity
-    //     }
-    //     setProducts([...products, product])
-    // }
+
     return (
         <Container>
 

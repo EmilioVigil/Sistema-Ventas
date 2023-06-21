@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
-import { UseProducts } from '../../../../hooks/UseProducts'
-import { ListOfProduct } from '../product/Product'
+// Importamos el contexto
+import { useContext, useState } from "react"
+import { dataContext } from "../../../../context/DataContext"
 
 // STYLES
 import { ModalWrapper, ModalContent } from "./ModalSearchBar.styled"
@@ -8,9 +8,9 @@ import { ModalWrapper, ModalContent } from "./ModalSearchBar.styled"
 export function ModalSearchBar({ closeModal }) {
 
     const [search, setSearch] = useState('')
-    // PRODUCTOS
-    const { products, loading, getProducts } = UseProducts({ search })
 
+    // PRODUCTOS DEL CONTEXT
+    const { products } = useContext(dataContext)
 
     const handleInput = (e) => {
         setSearch(e.target.value)
@@ -18,7 +18,7 @@ export function ModalSearchBar({ closeModal }) {
 
     const handleClick = (e) => {
         e.preventDefault()
-        getProducts({ search })
+
 
     }
 
@@ -29,7 +29,7 @@ export function ModalSearchBar({ closeModal }) {
             <ModalContent>
                 <button onClick={closeModal}>X</button>
                 <h3>Producto</h3>
-                <form action="">
+                <form >
                     <input type="text"
                         placeholder='Buscar producto...'
                         value={search}
@@ -38,13 +38,6 @@ export function ModalSearchBar({ closeModal }) {
                     <button onClick={handleClick} >Buscar</button>
                 </form>
             </ModalContent>
-            <main>
-                {
-                    products ? 'Hay productos' : 'No hay productos...'
-
-                }
-
-            </main>
         </ModalWrapper>
     )
 }

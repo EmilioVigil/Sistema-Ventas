@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import './main.css'
-
 import {
   RouterProvider,
 } from "react-router-dom";
-
+import { DataProvider } from "./context/DataContext";
 import { router } from './routes/Routes'
+import './main.css'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <DataProvider>
+      <RouterProvider router={router} />
+    </DataProvider>
   </React.StrictMode>
 );
