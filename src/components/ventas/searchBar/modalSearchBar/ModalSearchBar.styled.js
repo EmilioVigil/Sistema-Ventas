@@ -14,7 +14,8 @@ const ModalWrapper = styled.div`
 `;
 
 const ModalContent = styled.div`
-  width: 400px;
+  width: 50rem;
+  height: 35rem;
   padding: 20px;
   background-color: #fff;
   border-radius: 4px;
@@ -22,6 +23,6 @@ const ModalContent = styled.div`
 
 
 export {
-    ModalWrapper,
-    ModalContent
+  ModalWrapper,
+  ModalContent
 }

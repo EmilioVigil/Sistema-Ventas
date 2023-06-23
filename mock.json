@@ -2,73 +2,85 @@
     "Productos": [
         {
             "nombre": "Coca-Cola x500",
-            "precio": 100,
+            "precio": 300,
+            "empresa": "Coca-Cola",
+            "stock": 50
+        },
+        {
+            "nombre": "Coca-Cola lata x310",
+            "precio": 250,
+            "empresa": "Coca-Cola",
+            "stock": 50
+        },
+        {
+            "nombre": "Coca-Cola x2lts",
+            "precio": 590,
             "empresa": "Coca-Cola",
             "stock": 50
         },
         {
             "nombre": "Pepsi x500",
-            "precio": 95,
+            "precio": 260,
             "empresa": "PepsiCo",
             "stock": 70
         },
         {
             "nombre": "Sprite x500",
-            "precio": 90,
+            "precio": 300,
             "empresa": "Coca-Cola",
             "stock": 30
         },
         {
             "nombre": "Fanta x500",
-            "precio": 85,
+            "precio": 300,
             "empresa": "Coca-Cola",
             "stock": 40
         },
         {
             "nombre": "Maní salado x100g",
-            "precio": 30,
+            "precio": 200,
             "empresa": "Fulano Foods",
             "stock": 100
         },
         {
             "nombre": "Chocolatín x25g",
-            "precio": 10,
+            "precio": 150,
             "empresa": "ChocoDelight",
             "stock": 80
         },
         {
             "nombre": "Alfajor clásico",
-            "precio": 25,
+            "precio": 250,
             "empresa": "Dulce Tentación",
             "stock": 60
         },
         {
             "nombre": "Galletitas surtidas x500g",
-            "precio": 50,
+            "precio": 500,
             "empresa": "Delicias Crispy",
             "stock": 90
         },
         {
             "nombre": "Caramelos masticables x50",
-            "precio": 15,
+            "precio": 650,
             "empresa": "Sabores Dulces",
             "stock": 120
         },
         {
             "nombre": "Pochoclo dulce x200g",
-            "precio": 40,
+            "precio": 300,
             "empresa": "Palomitas Felices",
             "stock": 60
         },
         {
             "nombre": "Agua mineral x500ml",
-            "precio": 20,
+            "precio": 200,
             "empresa": "Fresh Springs",
             "stock": 100
         },
         {
             "nombre": "Jugo de naranja x1L",
-            "precio": 45,
+            "precio": 450,
             "empresa": "Fruit Delight",
             "stock": 50
         },

@@ -12,7 +12,6 @@ export const DataProvider = ({ children }) => {
         axios('mock.json')
             .then(response => {
                 setProducts(response.data.Productos)
-                console.log(response.data.Productos)
             })
     }, [])
 
