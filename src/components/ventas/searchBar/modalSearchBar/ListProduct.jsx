@@ -1,6 +1,14 @@
 import { ListContainer } from "./ListProduct.styled"
 
-export function ListProduct({ products }) {
+export function ListProduct({ products, closeModal }) {
+
+    const handleClick = (e) => {
+        e.preventDefault()
+
+        // Cuando agregamos un producto cerramos la modal
+        closeModal()
+    }
+
     return (
         <>
             {
@@ -10,7 +18,7 @@ export function ListProduct({ products }) {
                             <h2>{el.nombre}</h2>
                             <p>{el.empresa}</p>
                             <p>{el.precio}</p>
-                            <button>Agregar</button>
+                            <button onClick={handleClick} >Agregar</button>
                         </ListContainer>
                     )
                 })

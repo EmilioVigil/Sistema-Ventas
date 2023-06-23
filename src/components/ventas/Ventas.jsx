@@ -67,7 +67,6 @@ export function Ventas() {
                 <section>
                     <ProductList />
                 </section>
-                <section></section>
             </Container >
         </>
     )

@@ -4,193 +4,225 @@
             "nombre": "Coca-Cola x500",
             "precio": 300,
             "empresa": "Coca-Cola",
-            "stock": 50
+            "stock": 50,
+            "codBarra": "1"
         },
         {
             "nombre": "Coca-Cola lata x310",
             "precio": 250,
             "empresa": "Coca-Cola",
-            "stock": 50
+            "stock": 50,
+            "codBarra": "2"
         },
         {
             "nombre": "Coca-Cola x2lts",
             "precio": 590,
             "empresa": "Coca-Cola",
-            "stock": 50
+            "stock": 50,
+            "codBarra": "3"
         },
         {
             "nombre": "Pepsi x500",
             "precio": 260,
             "empresa": "PepsiCo",
-            "stock": 70
+            "stock": 70,
+            "codBarra": "4"
         },
         {
             "nombre": "Sprite x500",
             "precio": 300,
             "empresa": "Coca-Cola",
-            "stock": 30
+            "stock": 30,
+            "codBarra": "5"
         },
         {
             "nombre": "Fanta x500",
             "precio": 300,
             "empresa": "Coca-Cola",
-            "stock": 40
+            "stock": 40,
+            "codBarra": "6"
         },
         {
             "nombre": "Maní salado x100g",
             "precio": 200,
             "empresa": "Fulano Foods",
-            "stock": 100
+            "stock": 100,
+            "codBarra": "7"
         },
         {
             "nombre": "Chocolatín x25g",
             "precio": 150,
             "empresa": "ChocoDelight",
-            "stock": 80
+            "stock": 80,
+            "codBarra": "8"
         },
         {
             "nombre": "Alfajor clásico",
             "precio": 250,
             "empresa": "Dulce Tentación",
-            "stock": 60
+            "stock": 60,
+            "codBarra": "9"
         },
         {
             "nombre": "Galletitas surtidas x500g",
             "precio": 500,
             "empresa": "Delicias Crispy",
-            "stock": 90
+            "stock": 90,
+            "codBarra": "10"
         },
         {
             "nombre": "Caramelos masticables x50",
             "precio": 650,
             "empresa": "Sabores Dulces",
-            "stock": 120
+            "stock": 120,
+            "codBarra": "11"
         },
         {
             "nombre": "Pochoclo dulce x200g",
             "precio": 300,
             "empresa": "Palomitas Felices",
-            "stock": 60
+            "stock": 60,
+            "codBarra": "12"
         },
         {
             "nombre": "Agua mineral x500ml",
             "precio": 200,
             "empresa": "Fresh Springs",
-            "stock": 100
+            "stock": 100,
+            "codBarra": "13"
         },
         {
             "nombre": "Jugo de naranja x1L",
             "precio": 450,
             "empresa": "Fruit Delight",
-            "stock": 50
+            "stock": 50,
+            "codBarra": "14"
         },
         {
             "nombre": "Chicles sabor menta x10",
             "precio": 5,
             "empresa": "MentaFresh",
-            "stock": 150
+            "stock": 150,
+            "codBarra": "15"
         },
         {
             "nombre": "Papel higiénico x4 rollos",
             "precio": 60,
             "empresa": "Soft & Strong",
-            "stock": 30
+            "stock": 30,
+            "codBarra": "16"
         },
         {
             "nombre": "Revista de actualidad",
             "precio": 25,
             "empresa": "MediaWorld",
-            "stock": 20
+            "stock": 20,
+            "codBarra": "17"
         },
         {
             "nombre": "Café instantáneo x200g",
             "precio": 80,
             "empresa": "Café del Mundo",
-            "stock": 40
+            "stock": 40,
+            "codBarra": "18"
         },
         {
             "nombre": "Paquete de cigarrillos",
             "precio": 100,
             "empresa": "Tabacalera Nacional",
-            "stock": 50
+            "stock": 50,
+            "codBarra": "19"
         },
         {
             "nombre": "Barrita de cereal x25g",
             "precio": 15,
             "empresa": "Fit & Healthy",
-            "stock": 80
+            "stock": 80,
+            "codBarra": "20"
         },
         {
             "nombre": "Cerveza artesanal x500ml",
             "precio": 70,
             "empresa": "Brewmasters",
-            "stock": 60
+            "stock": 60,
+            "codBarra": "21"
         },
         {
             "nombre": "Yogur de frutas x200g",
             "precio": 35,
             "empresa": "Yogurísimo",
-            "stock": 70
+            "stock": 70,
+            "codBarra": "22"
         },
         {
             "nombre": "Helado de vainilla x500ml",
             "precio": 50,
             "empresa": "Frosty Delights",
-            "stock": 40
+            "stock": 40,
+            "codBarra": "23"
         },
         {
             "nombre": "Paquete de papas fritas x80g",
             "precio": 25,
             "empresa": "Crunchy Crisps",
-            "stock": 90
+            "stock": 90,
+            "codBarra": "24"
         },
         {
             "nombre": "Pan lactal x500g",
             "precio": 40,
             "empresa": "Panadería Don Pepe",
-            "stock": 70
+            "stock": 70,
+            "codBarra": "25"
         },
         {
             "nombre": "Caramelos de miel x50",
             "precio": 10,
             "empresa": "Sweet Honey",
-            "stock": 120
+            "stock": 120,
+            "codBarra": "26"
         },
         {
             "nombre": "Jabón de tocador x100g",
             "precio": 15,
             "empresa": "Fresh Clean",
-            "stock": 50
+            "stock": 50,
+            "codBarra": "27"
         },
         {
             "nombre": "Bolsa de caramelos surtidos",
             "precio": 5,
             "empresa": "CandyLand",
-            "stock": 200
+            "stock": 200,
+            "codBarra": "28"
         },
         {
             "nombre": "Barra de chocolate negro x50g",
             "precio": 30,
             "empresa": "Dark Delights",
-            "stock": 60
+            "stock": 60,
+            "codBarra": "29"
         },
         {
             "nombre": "Caramelos de menta x100g",
             "precio": 20,
             "empresa": "MentaFresca",
-            "stock": 80
+            "stock": 80,
+            "codBarra": "30"
         },
         {
             "nombre": "Gaseosa de naranja x500ml",
             "precio": 30,
             "empresa": "FruitiBubbles",
-            "stock": 40
+            "stock": 40,
+            "codBarra": "31"
         },
         {
             "nombre": "Cerveza rubia x330ml",
             "precio": 55,
             "empresa": "Golden Brew",
-            "stock": 50
+            "stock": 50,
+            "codBarra": "32"
         }
     ]
 }

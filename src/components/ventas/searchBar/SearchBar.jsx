@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useContext } from 'react'
+import { dataContext } from '../../../context/DataContext';
 import { ModalSearchBar } from './modalSearchBar/ModalSearchBar';
 
 import {
@@ -9,13 +10,13 @@ import {
 
 export function SearchBar() {
 
-    // Estado para almacenar los productos
-    const [products, setProducts] = useState([]);
+    // PRODUCTOS DEL CONTEXT
+    const { products, tableProducts, setTableProducts } = useContext(dataContext)
 
     // Estado para manejar las cantidades
     const [quantityProduct, setQuantityProduct] = useState(1)
 
-    // Estado para almacenar la entrada de busqeuda
+    // Estado para almacenar la entrada de busqueda
     const [searchProduct, setSearchProduct] = useState('');
 
     // Manejando la modal
@@ -35,6 +36,28 @@ export function SearchBar() {
     const handleQuantityProduct = (e) => {
         setQuantityProduct(e.target.value)
     }
+
+    // Agregamos productos a la tableProducts
+    const addProduct = (e) => {
+        e.preventDefault();
+        if (!searchProduct) return console.log('Elemento vacio')
+
+        const filterProduct = products.find(p => p.codBarra === searchProduct)
+
+        const newObjet = {
+            codBarra: filterProduct.codBarra,
+            nombre: filterProduct.nombre,
+            cantidad: quantityProduct,
+            precioUnidad: filterProduct.precio,
+            precioFinal: filterProduct.precio * quantityProduct
+        }
+        setTableProducts([...tableProducts,
+            newObjet
+        ])
+
+    }
+
+
     return (
         <SectionSearchProduct>
             <form >
@@ -51,10 +74,14 @@ export function SearchBar() {
                 />
             </form>
             <button onClick={openModal} >Buscar</button>
-            <button >Agregar</button>
+            <button onClick={addProduct} > Agregar </button>
             {
                 isOpenModal && (
-                    < ModalSearchBar closeModal={closeModal} />
+                    < ModalSearchBar
+                        closeModal={closeModal}
+                        products={products}
+                        tableProducts={tableProducts}
+                        setTableProducts={setTableProducts} />
                 )
             }
         </SectionSearchProduct >

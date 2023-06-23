@@ -7,6 +7,7 @@ export const dataContext = createContext()
 export const DataProvider = ({ children }) => {
 
     const [products, setProducts] = useState([]);
+    const [tableProducts, setTableProducts] = useState([])
 
     useEffect(() => {
         axios('mock.json')
@@ -16,7 +17,7 @@ export const DataProvider = ({ children }) => {
     }, [])
 
     return (
-        <dataContext.Provider value={{ products }} >
+        <dataContext.Provider value={{ products, tableProducts, setTableProducts }} >
             {
                 children
             }

@@ -11,12 +11,15 @@ const ModalWrapper = styled.div`
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  border : 2px solid black;
+  overflow-y: auto;
 `;
 
 const ModalContent = styled.div`
   width: 50rem;
-  height: 35rem;
+  height: auto;
   padding: 20px;
+  margin : auto;
   background-color: #fff;
   border-radius: 4px;
 `;

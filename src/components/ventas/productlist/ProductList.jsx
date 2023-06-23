@@ -1,5 +1,11 @@
+// Context
+import { useContext } from "react";
+import { dataContext } from "../../../context/DataContext";
+
+// Components
 import { SearchBar } from "../searchBar/SearchBar";
 
+// Styles
 import {
     Container,
     TableCell, TableHeader, TableList, TableRow, Table
@@ -7,6 +13,8 @@ import {
 
 
 export function ProductList() {
+
+    const { tableProducts, setTableProducts } = useContext(dataContext)
 
     return (
         <Container>
@@ -26,11 +34,23 @@ export function ProductList() {
                     </thead>
                     <tbody>
                         {/* PRODUCTOS */}
-
+                        {
+                            tableProducts ? tableProducts.map(el => {
+                                return (
+                                    <TableRow key={el.codBarra}>
+                                        <TableCell>{el.nombre}</TableCell>
+                                        <TableCell>{el.cantidad}</TableCell>
+                                        <TableCell>${el.precioUnidad}</TableCell>
+                                        <TableCell>${el.precioFinal}</TableCell>
+                                    </TableRow>
+                                )
+                            })
+                                : <p>No hay productos</p>
+                        }
                     </tbody>
                 </Table>
             </TableList>
 
-        </Container>
+        </Container >
     )
 }
