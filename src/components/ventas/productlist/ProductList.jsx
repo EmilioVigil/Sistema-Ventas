@@ -8,13 +8,21 @@ import { SearchBar } from "../searchBar/SearchBar";
 // Styles
 import {
     Container,
-    TableCell, TableHeader, TableList, TableRow, Table
+    TableCell, TableHeader, TableList, TableRow, Table, ButtonX
 } from "./ProductList.styled";
 
 
 export function ProductList() {
 
     const { tableProducts, setTableProducts } = useContext(dataContext)
+
+    const handleClick = (codBarra) => {
+        const productId = tableProducts.find(el => el.codBarra === codBarra);
+        const newTable = tableProducts.filter(el => {
+            return el !== productId
+        })
+        setTableProducts(newTable)
+    }
 
     return (
         <Container>
@@ -42,6 +50,11 @@ export function ProductList() {
                                         <TableCell>{el.cantidad}</TableCell>
                                         <TableCell>${el.precioUnidad}</TableCell>
                                         <TableCell>${el.precioFinal}</TableCell>
+                                        <ButtonX
+                                            onClick={() => handleClick(el.codBarra)}
+                                        >
+                                            X
+                                        </ButtonX>
                                     </TableRow>
                                 )
                             })
