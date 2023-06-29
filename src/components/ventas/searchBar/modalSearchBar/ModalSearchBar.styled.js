@@ -22,10 +22,50 @@ const ModalContent = styled.div`
   margin : auto;
   background-color: #fff;
   border-radius: 4px;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
 `;
 
 
+const CloseButton = styled.button`
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: auto;
+`;
+
+const Title = styled.h3`
+  margin: 0;
+`;
+
+const Form = styled.form`
+  display: flex;
+  align-items: center;
+`;
+
+const Input = styled.input`
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+`;
+
+const SearchButton = styled.button`
+  background-color: #f2f2f2;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+`;
+
 export {
   ModalWrapper,
-  ModalContent
+  ModalContent,
+  CloseButton,
+  Title,
+  Form,
+  Input,
+  SearchButton
 }

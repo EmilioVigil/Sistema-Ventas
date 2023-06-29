@@ -1,9 +1,10 @@
-// Styled
-import { Container, SectionConfig, FormConfig, ItemForm } from "./Ventas.styled"
 import { useState, useEffect } from "react"
 import { ProductList } from "./productlist/ProductList";
-
+import { SubTotal } from "./subTotal/SubTotal";
+// Styled
+import { Container, SectionConfig, FormConfig, ItemForm } from "./Ventas.styled"
 export function Ventas() {
+
     const [fecha, setFecha] = useState(new Date().toISOString().split("T")[0]);
 
     useEffect(() => {
@@ -66,6 +67,10 @@ export function Ventas() {
 
                 <section>
                     <ProductList />
+                </section>
+
+                <section>
+                    <SubTotal />
                 </section>
             </Container >
         </>

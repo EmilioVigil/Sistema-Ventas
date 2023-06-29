@@ -27,17 +27,17 @@ export function Login() {
                     <FormGroup>
                         <Input type="text" placeholder=" " />
                         <Label htmlFor="name">Nombre</Label>
-                        <Line className="form__line" />
+                        <Line />
                     </FormGroup>
                     <FormGroup>
                         <Input type="text" id="user" placeholder=" " />
                         <Label htmlFor="user">Usuario</Label>
-                        <Line className="form__line" />
+                        <Line />
                     </FormGroup>
                     <FormGroup>
-                        <Input type="text" id="password" placeholder=" " />
+                        <Input type="password" id="password" placeholder=" " />
                         <Label htmlFor="password">Contraseña</Label>
-                        <Line className="form__line" />
+                        <Line />
                     </FormGroup>
                     <Link to={'/admin/ventas'} >
                         <SubmitButton type="submit" value="Entrar" />

@@ -1,29 +1,52 @@
-import { ListContainer } from "./ListProduct.styled"
+import {
+    Table,
+    TableHeader,
+    TableRow,
+    TableCell
+} from "./ListProduct.styled"
 
-export function ListProduct({ products, closeModal }) {
+export function ListProduct({ products, closeModal, tableProducts, setTableProducts, quantityProduct }) {
 
-    const handleClick = (e) => {
-        e.preventDefault()
+    const handleClick = (item) => {
 
-        // Cuando agregamos un producto cerramos la modal
+        const newProduct = {
+            codBarra: item.codBarra,
+            nombre: item.nombre,
+            cantidad: quantityProduct,
+            precioUnidad: item.precio,
+            precioFinal: item.precio * quantityProduct
+        }
+
+        setTableProducts([...tableProducts,
+            newProduct
+        ])
         closeModal()
     }
 
     return (
         <>
-            {
-                products.map(el => {
-                    return (
-                        <ListContainer key={el.nombre}>
-                            <h2>{el.nombre}</h2>
-                            <p>{el.empresa}</p>
-                            <p>{el.precio}</p>
-                            <button onClick={handleClick} >Agregar</button>
-                        </ListContainer>
-                    )
-                })
-            }
-
+            <Table>
+                <thead>
+                    <tr>
+                        <TableHeader>Producto</TableHeader>
+                        <TableHeader>Empresa</TableHeader>
+                        <TableHeader>Precio</TableHeader>
+                        <TableHeader></TableHeader>
+                    </tr>
+                </thead>
+                <tbody>
+                    {products.map((item, index) => (
+                        <TableRow key={index}>
+                            <TableCell>{item.nombre}</TableCell>
+                            <TableCell>{item.empresa}</TableCell>
+                            <TableCell>${item.precio}</TableCell>
+                            <TableCell>
+                                <button onClick={() => handleClick(item)} >Agregar</button>
+                            </TableCell>
+                        </TableRow>
+                    ))}
+                </tbody>
+            </Table>
         </>
     )
 

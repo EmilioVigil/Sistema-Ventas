@@ -38,6 +38,7 @@ export function ProductList() {
                             <TableHeader>Cantidad</TableHeader>
                             <TableHeader>Precio por unidad</TableHeader>
                             <TableHeader>Precio final</TableHeader>
+                            <TableHeader></TableHeader>
                         </TableRow>
                     </thead>
                     <tbody>
@@ -50,11 +51,13 @@ export function ProductList() {
                                         <TableCell>{el.cantidad}</TableCell>
                                         <TableCell>${el.precioUnidad}</TableCell>
                                         <TableCell>${el.precioFinal}</TableCell>
-                                        <ButtonX
-                                            onClick={() => handleClick(el.codBarra)}
-                                        >
-                                            X
-                                        </ButtonX>
+                                        <TableCell>
+                                            <ButtonX
+                                                onClick={() => handleClick(el.codBarra)}
+                                            >
+                                                X
+                                            </ButtonX>
+                                        </TableCell>
                                     </TableRow>
                                 )
                             })

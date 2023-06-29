@@ -10,10 +10,15 @@ import {
 // STYLES
 import {
     ModalWrapper,
-    ModalContent
+    ModalContent,
+    CloseButton,
+    Title,
+    Form,
+    Input,
+    SearchButton
 } from "./ModalSearchBar.styled"
 
-export function ModalSearchBar({ closeModal, products, tableProducts, setTableProducts }) {
+export function ModalSearchBar({ closeModal, products, tableProducts, setTableProducts, quantityProduct }) {
 
     const [search, setSearch] = useState('')
 
@@ -38,20 +43,22 @@ export function ModalSearchBar({ closeModal, products, tableProducts, setTablePr
     return (
         <ModalWrapper >
             <ModalContent>
-                <button onClick={closeModal}>X</button>
-                <h3>Producto</h3>
-                <form >
-                    <input type="text"
+                <CloseButton onClick={closeModal}>❌</CloseButton>
+                <Title>Productos</Title>
+                <Form >
+                    <Input type="text"
                         placeholder='Buscar producto...'
                         value={search}
                         onChange={e => handleInput(e)}
 
                     />
-                    <button onClick={handleClick} >Buscar</button>
-                </form>
+                    <SearchButton onClick={handleClick} >Buscar</SearchButton>
+                </Form>
                 {
                     filterProducts.length > 0 ?
-                        <ListProduct products={filterProducts} closeModal={closeModal} />
+                        <ListProduct products={filterProducts} closeModal={closeModal}
+                            tableProducts={tableProducts} setTableProducts={setTableProducts} quantityProduct={quantityProduct}
+                        />
                         : <p>No se encontraron resultados</p>
                 }
             </ModalContent>

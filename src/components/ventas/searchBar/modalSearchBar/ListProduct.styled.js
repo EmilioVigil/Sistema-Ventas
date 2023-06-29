@@ -1,13 +1,30 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const ListContainer = styled.div`
-    display: flex;
-    gap: 5rem;
-    justify-content: space-between;
-    align-items: center;
-`
+// Definir los estilos de la tabla
+const Table = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+`;
 
+const TableHeader = styled.th`
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+`;
+
+const TableRow = styled.tr`
+  &:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+`;
+
+const TableCell = styled.td`
+  padding: 8px;
+`;
 
 export {
-    ListContainer
+    Table,
+    TableHeader,
+    TableRow,
+    TableCell
 }

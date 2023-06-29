@@ -81,7 +81,9 @@ export function SearchBar() {
                         closeModal={closeModal}
                         products={products}
                         tableProducts={tableProducts}
-                        setTableProducts={setTableProducts} />
+                        setTableProducts={setTableProducts}
+                        quantityProduct={quantityProduct}
+                    />
                 )
             }
         </SectionSearchProduct >
