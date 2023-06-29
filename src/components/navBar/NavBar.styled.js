@@ -104,7 +104,8 @@ const DesktopNavbar = styled.nav`
   @media (min-width: 769px) {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width:23rem;
     gap : 5rem;   
     background-color: #003D5B ;

@@ -1,17 +1,23 @@
-import { useState, useContext, useEffect } from "react"
+import { useContext } from "react"
 import { dataContext } from "../../../context/DataContext"
+
+// Styled
+import { Container } from "./SubTotal.styled";
 
 export function SubTotal() {
 
-    const { tableProducts, setTableProducts } = useContext(dataContext)
-    const { total, setTotal } = useState(20);
+    const { subTotal } = useContext(dataContext)
+
+
 
     return (
-        <>
-            <h3>Total:</h3>
-            <div>
-                ${total}
-            </div>
-        </>
+        <Container>
+            <h2>
+                Total:
+            </h2>
+            <p> $ {subTotal}</p>
+        </Container>
     )
 }
+
+

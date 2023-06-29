@@ -4,10 +4,21 @@ import axios from 'axios'
 
 export const dataContext = createContext()
 
+
+
 export const DataProvider = ({ children }) => {
 
     const [products, setProducts] = useState([]);
     const [tableProducts, setTableProducts] = useState([])
+    const [subTotal, setSubtotal] = useState(0)
+
+    const calcularSubtotal = () => {
+        let total = 0;
+        tableProducts.forEach(producto => {
+            total += producto.precioFinal;
+        });
+        setSubtotal(total);
+    };
 
     useEffect(() => {
         axios('mock.json')
@@ -16,8 +27,12 @@ export const DataProvider = ({ children }) => {
             })
     }, [])
 
+    useEffect(() => {
+        calcularSubtotal()
+    }, [tableProducts])
+
     return (
-        <dataContext.Provider value={{ products, tableProducts, setTableProducts }} >
+        <dataContext.Provider value={{ products, tableProducts, setTableProducts, subTotal }} >
             {
                 children
             }

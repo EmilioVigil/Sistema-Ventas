@@ -72,6 +72,11 @@ export function Ventas() {
                 <section>
                     <SubTotal />
                 </section>
+
+                <section>
+                    <button>Realizar venta</button><button>Cancelar</button>
+                </section>
+
             </Container >
         </>
     )

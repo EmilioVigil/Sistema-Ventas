@@ -224,5 +224,11 @@
             "stock": 50,
             "codBarra": "32"
         }
-    ]
+    ],
+    "Usuario": {
+        "name": "Carlos",
+        "userName:": "Carlitos12",
+        "gmail": "carlos@gmail.com",
+        "password": "carlitos2023"
+    }
 }
