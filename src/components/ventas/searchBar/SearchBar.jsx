@@ -73,8 +73,8 @@ export function SearchBar() {
                     onChange={handleSearch}
                 />
             </form>
-            <button onClick={openModal} >Buscar</button>
-            <button onClick={addProduct} > Agregar </button>
+            <button onClick={openModal} >🔎</button>
+            <button onClick={addProduct} > ✔ </button>
             {
                 isOpenModal && (
                     < ModalSearchBar
