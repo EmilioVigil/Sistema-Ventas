@@ -8,7 +8,6 @@ import {
 export function ListProduct({ products, closeModal, tableProducts, setTableProducts, quantityProduct }) {
 
     const handleClick = (item) => {
-
         const newProduct = {
             codBarra: item.codBarra,
             nombre: item.nombre,

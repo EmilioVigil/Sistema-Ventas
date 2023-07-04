@@ -27,20 +27,20 @@ export function Ventas() {
                         <div id="information" >
                             <ItemForm>
                                 <label htmlFor="fecha">Fecha</label>
-                                <input type="text" id="fecha" value={fecha} />
+                                <input type="text" id="fecha" value={fecha} readOnly={true} />
 
                             </ItemForm>
                             <ItemForm>
-                                <label htmlFor="">Punto de venta</label>
+                                <label htmlFor="venta">Punto de venta</label>
                                 <input type="text" defaultValue={'SAN MARTIN 410 - LA CALERA - CÓRDOBA'} />
                             </ItemForm>
                             <ItemForm>
-                                <label htmlFor="">N° Comprobante</label>
+                                <label htmlFor="comprobante">N° Comprobante</label>
                                 <input type="text" />
                             </ItemForm>
                             <ItemForm>
-                                <label htmlFor="">T.Factura</label>
-                                <select name="" id="">
+                                <label htmlFor="factura">T.Factura</label>
+                                <select >
                                     <option >X</option>
                                     <option >A</option>
                                     <option >B</option>
@@ -51,12 +51,12 @@ export function Ventas() {
 
 
                         <ItemForm>
-                            <label htmlFor="">Cliente</label>
+                            <label htmlFor="cliente">Cliente</label>
                             <input type="text" />
                         </ItemForm>
                         <ItemForm>
-                            <label htmlFor="">Forma de pago</label>
-                            <select name="" id="">
+                            <label htmlFor="formPago">Forma de pago</label>
+                            <select >
                                 <option >Efectivo</option>
                                 <option >Debito</option>
                                 <option >Credito</option>

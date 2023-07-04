@@ -41,6 +41,7 @@ export function SearchBar() {
     const addProduct = (e) => {
         e.preventDefault();
         if (!searchProduct) return console.log('Elemento vacio')
+        if (quantityProduct <= 0) return alert('La cantidad no puede ser 0 o menor')
 
         const filterProduct = products.find(p => p.codBarra === searchProduct)
 

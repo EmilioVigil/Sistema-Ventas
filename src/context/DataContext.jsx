@@ -32,7 +32,7 @@ export const DataProvider = ({ children }) => {
     }, [tableProducts])
 
     return (
-        <dataContext.Provider value={{ products, tableProducts, setTableProducts, subTotal }} >
+        <dataContext.Provider value={{ products, tableProducts, setTableProducts, subTotal }}  >
             {
                 children
             }
