@@ -32,7 +32,7 @@ export function Ventas() {
                             </ItemForm>
                             <ItemForm>
                                 <label htmlFor="venta">Punto de venta</label>
-                                <input type="text" defaultValue={'SAN MARTIN 410 - LA CALERA - CÓRDOBA'} />
+                                <input type="text" className="location" defaultValue={'SAN MARTIN 410 - LA CALERA - CÓRDOBA'} />
                             </ItemForm>
                             <ItemForm>
                                 <label htmlFor="comprobante">N° Comprobante</label>

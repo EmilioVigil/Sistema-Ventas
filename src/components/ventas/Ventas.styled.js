@@ -39,10 +39,42 @@ const ItemForm = styled.div`
     input{
         padding: 5px;
         border : none;
-        border-radius: 2px;
-        color : #fff;
-        background-color: #18273E;
+        border-radius: 5px;
+        color : #333;
+        background-color: #f7f7f7;
+        padding: .5rem;
+        font-size: 15px;
+          font-weight: bold;
+
+        
+        &.location{
+            width: 19rem;
+        }
     }
+
+    select{
+
+        width: 10rem  ;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #eaeaea;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 2px #555;
+    }
+    
+}
+
 
 
 `

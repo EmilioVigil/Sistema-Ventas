@@ -2,7 +2,11 @@ import { useContext } from "react"
 import { dataContext } from "../../../context/DataContext"
 
 // Styled
-import { Container } from "./SubTotal.styled";
+import {
+    Container,
+    SubtotalAmount,
+    SubtotalText
+} from "./SubTotal.styled";
 
 export function SubTotal() {
 
@@ -12,10 +16,10 @@ export function SubTotal() {
 
     return (
         <Container>
-            <h2>
+            <SubtotalText>
                 Total:
-            </h2>
-            <p> $ {subTotal}</p>
+            </SubtotalText>
+            <SubtotalAmount> $ {subTotal}</SubtotalAmount>
         </Container>
     )
 }

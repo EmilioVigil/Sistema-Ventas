@@ -72,6 +72,7 @@ export function SearchBar() {
                     placeholder="Buscar producto"
                     value={searchProduct}
                     onChange={handleSearch}
+
                 />
             </form>
             <button onClick={openModal} >🔎</button>
