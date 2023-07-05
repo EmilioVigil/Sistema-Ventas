@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { ProductList } from "./productlist/ProductList";
 import { SubTotal } from "./subTotal/SubTotal";
+import { MakeSale } from "./makeSale/MakeSale";
 // Styled
 import { Container, SectionConfig, FormConfig, ItemForm } from "./Ventas.styled"
 export function Ventas() {
@@ -74,7 +75,7 @@ export function Ventas() {
                 </section>
 
                 <section>
-                    <button>Realizar venta</button><button>Cancelar</button>
+                    <MakeSale />
                 </section>
 
             </Container >

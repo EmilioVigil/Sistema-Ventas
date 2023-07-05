@@ -5,7 +5,9 @@ import { ModalSearchBar } from './modalSearchBar/ModalSearchBar';
 import {
     SectionSearchProduct,
     InputQuantity,
-    InputSearchBar
+    InputSearchBar,
+    AddButton,
+    SearchButton
 } from './SearchBar.styled'
 
 export function SearchBar() {
@@ -75,8 +77,8 @@ export function SearchBar() {
 
                 />
             </form>
-            <button onClick={openModal} >🔎</button>
-            <button onClick={addProduct} > ✔ </button>
+            <SearchButton onClick={openModal} >🔎</SearchButton>
+            <AddButton onClick={addProduct} > ✔ </AddButton>
             {
                 isOpenModal && (
                     < ModalSearchBar

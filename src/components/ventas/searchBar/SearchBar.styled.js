@@ -13,7 +13,7 @@ const InputSearchBar = styled.input`
   outline: none;
   font-size: 16px;
   border-radius: 5px;
-
+  height: 1.5rem;
     &:focus {
     border-color: #007bff;
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
@@ -37,9 +37,42 @@ const InputQuantity = styled.input`
   }
 
 `
+const SearchButton = styled.button`
+  height: 2.3rem;
+  width: 2.3rem;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #1E90FF ;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #555;
+  }
+`;
+
+const AddButton = styled.button`
+    height: 2.3rem;
+  width: 2.3rem;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #45a049;
+  }
+`;
 
 export {
-    SectionSearchProduct,
-    InputQuantity,
-    InputSearchBar
+  SectionSearchProduct,
+  InputQuantity,
+  InputSearchBar,
+  AddButton,
+  SearchButton
 }
