@@ -17,8 +17,9 @@ import {
 export function Login() {
     return (
         <Container>
+
             <FormContainer>
-                <Title>Inicia sesion</Title>
+                <Title>Sistema Ventas</Title>
                 <Paragraph>
                     ¿Aún no tienes una cuenta? <Link to="/admin/ventas">Entra aquí</Link>
                 </Paragraph>
@@ -40,10 +41,17 @@ export function Login() {
                         <Line />
                     </FormGroup>
                     <Link to={'/admin/ventas'} >
-                        <SubmitButton type="submit" value="Entrar" />
+                        <SubmitButton type="submit" value="Ingresar" />
+                    </Link>
+                    <Link to={'/admin/ventas'}>
+                        <SubmitButton type='submit' value={'SignUp'} backgroundColor="#F26638" />
                     </Link>
                 </InputContainer>
             </FormContainer>
+            <div>
+                <h1>Aca ira la imagen</h1>
+            </div>
+
         </Container>
 
     )

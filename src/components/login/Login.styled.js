@@ -2,23 +2,19 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   font-family: 'Roboto', sans-serif;
-  background-color: #e5e5f7;
-  background-image: radial-gradient(#da38b8 0.5px, transparent 0.5px),
-    radial-gradient(#da38b8 0.5px, #e5e5f7 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
   display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  width: 100vw;
 `;
 
 const FormContainer = styled.form`
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 40vw;
   background-color: #fff;
-  margin: auto;
-  width: 20rem;
-  max-width: 400px;
-  padding: 4.5em 3em;
   border-radius: 10px;
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
   text-align: center;
@@ -80,7 +76,7 @@ const Label = styled.label`
 const SubmitButton = styled.input`
   width: 20rem;
   cursor: pointer;
-  background-color: #3866f2;
+  background-color: ${props => props.backgroundColor || '#3866f2'};
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
