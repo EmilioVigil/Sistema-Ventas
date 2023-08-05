@@ -18,17 +18,21 @@ const FormContainer = styled.form`
   border-radius: 10px;
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
   text-align: center;
+
 `;
 
 const Title = styled.h2`
   font-size: 2rem;
   margin-bottom: 0.5em;
+  color : #000;
 `;
 
 const Paragraph = styled.p`
   font-weight: 300;
+  color : #000;
 `;
 
+// FORM
 const InputContainer = styled.div`
   margin-top: 3em;
   display: grid;
@@ -50,7 +54,7 @@ const Input = styled.input`
   border: none;
   outline: none;
   border-bottom: 1px solid var(--color);
-
+  border-radius: 7px;
   &:not(:placeholder-shown) {
     color: #4d4646;
   }
@@ -98,6 +102,11 @@ const Line = styled.span`
   transition: transform 0.4s;
 `;
 
+// Contenedor IMG
+const ContainerImg = styled.div`
+  flex: 1;
+  `
+
 
 
 export {
@@ -110,5 +119,6 @@ export {
   Input,
   Label,
   SubmitButton,
-  Line
+  Line,
+  ContainerImg
 }

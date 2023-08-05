@@ -11,7 +11,8 @@ import {
     Input,
     Label,
     SubmitButton,
-    Line
+    Line,
+    ContainerImg
 } from './Login.styled'
 
 export function Login() {
@@ -48,9 +49,9 @@ export function Login() {
                     </Link>
                 </InputContainer>
             </FormContainer>
-            <div>
-                <h1>Aca ira la imagen</h1>
-            </div>
+            <ContainerImg>
+                
+            </ContainerImg>
 
         </Container>
 
