@@ -21,7 +21,7 @@ import {
 } from './NavBar.styled'
 
 
-export function SideBar() {
+export function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     const [isFirstRender, setIsFirstRender] = useState(false);
     const navigate = useNavigate();
@@ -34,17 +34,17 @@ export function SideBar() {
     }, []);
 
 
-    const handleDashboard = (e) => {
+    const handleStock = (e) => {
         e.preventDefault();
-        return navigate('/admin/dashboard')
+        return navigate('/dashboard/stock')
     }
     const handleVentas = (e) => {
         e.preventDefault();
-        return navigate('/admin/ventas')
+        return navigate('/dashboard/ventas')
     }
     const handleList = (e) => {
         e.preventDefault();
-        return navigate('/admin/productList')
+        return navigate('/dashboard/productList')
     }
 
     return (
@@ -84,8 +84,8 @@ export function SideBar() {
                     <DesktopIcon>
                         <FaChartLine />
                     </DesktopIcon>
-                    <span onClick={handleDashboard}>
-                        Dashboard
+                    <span onClick={handleStock}>
+                        Stock
                     </span>
                 </DesktopNavItem>
                 <DesktopNavItem>

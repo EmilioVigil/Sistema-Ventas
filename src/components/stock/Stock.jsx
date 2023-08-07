@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
-export function Dashboard() {
+export function Stock() {
 
     const navigate = useNavigate();
 
@@ -11,7 +11,7 @@ export function Dashboard() {
 
     return (
         <>
-            <p>Dashboard</p>
+            <p>Stock</p>
             <button onClick={handleClick} >Volver</button>
         </>
     )

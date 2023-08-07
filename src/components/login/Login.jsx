@@ -41,10 +41,10 @@ export function Login() {
                         <Label htmlFor="password">Contraseña</Label>
                         <Line />
                     </FormGroup>
-                    <Link to={'/admin/ventas'} >
+                    <Link to={'/dashboard/ventas'} >
                         <SubmitButton type="submit" value="Ingresar" />
                     </Link>
-                    <Link to={'/admin/ventas'}>
+                    <Link to={'/dashboard/ventas'}>
                         <SubmitButton type='submit' value={'SignUp'} backgroundColor="#F26638" />
                     </Link>
                 </InputContainer>

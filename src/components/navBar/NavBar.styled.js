@@ -98,15 +98,15 @@ const ToggleButton = styled.button`
   }
 `;
 
+
+//    DESKTOP
 const DesktopNavbar = styled.nav`
   display: none;
 
   @media (min-width: 769px) {
     display: flex;
     flex-direction: column;
-    height: auto;
-    min-height: 100vh;
-    width:23rem;
+    width:100vw;
     gap : 5rem;   
     background-color: #003D5B ;
     margin : 0;
