@@ -1,66 +1,65 @@
-import { useNavigate, Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { Outlet } from "react-router-dom";
 
 // Icons
+import { IconContext } from 'react-icons';
 import { FaChartLine } from 'react-icons/fa';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { AiOutlineUnorderedList } from 'react-icons/ai';
 
 // Styled
 import {
-    DesktopNavbar,
-    DesktopNavItem,
-    DesktopIcon,
+    Navbar,
+    ItemContainer,
+    NavItem,
+    Icon,
     Detail
 } from './NavBar.styled'
 
 
 export function Nav() {
-    const navigate = useNavigate();
 
+    const dataNav = [
+        { title: 'Ventas', path: '/dashboard/ventas' , icon : 'AiOutlineShoppingCart'},
+        { title: 'Lista de productos', path: '/dashboard/productList' , icon : 'AiOutlineUnorderedList'},
+        { title: 'Stock', path: '/dashboard/stock' , icon : 'FaChartLine'},
+        { title: 'Admin', path: '/dashboard/admin' , icon : 'AiOutlineShoppingCart'}
+    ]
 
-
-
-    const handleStock = (e) => {
-        e.preventDefault();
-        return navigate('/dashboard/stock')
-    }
-    const handleVentas = (e) => {
-        e.preventDefault();
-        return navigate('/dashboard/ventas')
-    }
+    const { pathname } = useLocation();
     
-    const handleList = (e) => {
-        e.preventDefault();
-        return navigate('/dashboard/productList')
-    }
-
+    
     return (
         <>
-            <DesktopNavbar>
-                <DesktopNavItem>
-                    <DesktopIcon>
-                        <FaChartLine />
-                    </DesktopIcon>
-                    <span onClick={handleStock}>
-                        <Link to='/dashboard/stock'>
-                            Stock
-                        </Link>
-                    </span>
-                </DesktopNavItem>
-                <DesktopNavItem>
-                    <DesktopIcon>
-                        <AiOutlineShoppingCart />
-                    </DesktopIcon>
-                    <span onClick={handleVentas} >Ventas</span>
-                </DesktopNavItem>
-                <DesktopNavItem>
-                    <DesktopIcon>
-                        <AiOutlineUnorderedList />
-                    </DesktopIcon>
-                    <span onClick={handleList} >Lista de productos</span>
-                </DesktopNavItem>
-            </DesktopNavbar >
+            <Navbar>
+                
+                <h2>
+                    Sistema Ventas
+                </h2>
+
+                <ItemContainer>
+                <IconContext.Provider value={{ size: '2em' }}>
+                    {dataNav.map(({title, path, icon}) => {
+                        const IconComponent = eval(icon);  // Convertir el nombre del icono en un componente
+                        return (
+                            <NavItem key={title} itemAct = {`${pathname === path ? "itemAct" : ""}`}>
+                                <Icon>
+                                <IconComponent />
+                                </Icon>
+                                <span>
+                                    <Link to={path} >
+                                        {title}
+                                    </Link>
+                                </span>
+                        </NavItem>
+          );
+        })}
+                </IconContext.Provider>
+
+                </ItemContainer>
+                
+            </Navbar >
+
             <Detail>
                 <Outlet />
             </Detail>

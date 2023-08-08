@@ -1,32 +1,64 @@
 import styled  from 'styled-components';
 
 //    DESKTOP
-const DesktopNavbar = styled.nav`
-    display: flex;
-    flex-direction: column;
+const Navbar = styled.nav`
+    height: 120px;
     width:100vw;
-    gap : 5rem;   
-    background-color: #003D5B ;
+    display: flex;
+    flex-direction: row;
+    background-color: #0162E5 ;
     margin : 0;
-  
+
+  h2{
+    margin-left: 20px;
+    color : #ffa726;
+    text-align: center;
+  }
+
 `;
 
-const DesktopNavItem = styled.div`
+const ItemContainer = styled.div`
+  padding : 2rem;
+  display : flex;
+  flex : 1;
+  flex-direction : row;
+  justify-content : space-evenly;
+
+`
+
+const NavItem = styled.div`
   display: flex;
   align-items: flex-start;
   padding: 1rem;
   color: #fff;
   transition: background-color 0.3s ease;
   cursor:pointer;
-
+  transition: border-bottom .3s;
+  
+  ${props =>
+    props.itemAct === 'itemAct' &&
+    `
+    border-bottom : 3px solid #ffa726 ; 
+  
+  `}
 
 
   &:hover {
-    background-color: #EDAE49;
+    border-bottom : 3px solid #ffa726 ; 
   }
+
+  span{
+    a{
+      text-decoration: none;
+      color : #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  }
+
 `;
 
-const DesktopIcon = styled.div`
+const Icon = styled.div`
   margin-right: 1rem;
 `;
 
@@ -36,9 +68,10 @@ const Detail = styled.div`
 `
 
 export {
-  DesktopNavbar,
-  DesktopNavItem,
-  DesktopIcon,
+  Navbar,
+  ItemContainer,
+  NavItem,
+  Icon,
   Detail
 
 }
