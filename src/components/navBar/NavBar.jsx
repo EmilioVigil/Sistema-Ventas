@@ -38,7 +38,7 @@ export function Nav() {
                 </h2>
 
                 <ItemContainer>
-                <IconContext.Provider value={{ size: '2em' }}>
+                <IconContext.Provider value={{ size: '1.5em' }}>
                     {dataNav.map(({title, path, icon}) => {
                         const IconComponent = eval(icon);  // Convertir el nombre del icono en un componente
                         return (

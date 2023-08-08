@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 const SectionSearchProduct = styled.div`
     display: flex;
-
 `
 const InputSearchBar = styled.input`
   margin-left: 1rem;
@@ -23,7 +22,8 @@ const InputSearchBar = styled.input`
 `
 
 const InputQuantity = styled.input`
-  width: 150px;
+  width: 200px;
+  margin-left : 15px;
   padding: 5px;
   font-size: 16px;
   border: 1px solid #ccc;

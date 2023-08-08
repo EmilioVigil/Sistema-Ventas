@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-    background-color: #F26638;
-    margin: 0rem 2rem 0rem 2rem;
+    background-color: #F0F0F0;
+    margin: 1rem 2rem 0rem 2rem;
+    border-radius: 10px;
 `
 
 const SectionConfig = styled.section`
     height: 10rem;
-    border : 1px solid black;
     padding:2rem;
     display:flex;
     flex-direction: column;

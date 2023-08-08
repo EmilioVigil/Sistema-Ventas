@@ -2,6 +2,7 @@ import { useState, useContext } from 'react'
 import { dataContext } from '../../../context/DataContext';
 import { ModalSearchBar } from './modalSearchBar/ModalSearchBar';
 
+// STYLES
 import {
     SectionSearchProduct,
     InputQuantity,

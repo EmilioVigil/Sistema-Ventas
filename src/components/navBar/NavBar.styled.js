@@ -3,11 +3,11 @@ import styled  from 'styled-components';
 //    DESKTOP
 const Navbar = styled.nav`
     height: 120px;
-    width:100vw;
+    width: 100vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: row;
     background-color: #0162E5 ;
-    margin : 0;
 
   h2{
     margin-left: 20px;
@@ -52,7 +52,7 @@ const NavItem = styled.div`
       text-decoration: none;
       color : #fff;
       font-weight: bold;
-      font-size: 1.2em;
+      font-size: 1em;
     }
   }
 
@@ -63,7 +63,7 @@ const Icon = styled.div`
 `;
 
 const Detail = styled.div`
-  flex:1;
+  /* flex:1; */
 
 `
 

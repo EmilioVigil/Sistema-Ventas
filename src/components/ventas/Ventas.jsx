@@ -21,7 +21,6 @@ export function Ventas() {
 
     return (
         <>
-            <h1>Ventas</h1>
             <Container>
                 <SectionConfig>
                     <FormConfig>

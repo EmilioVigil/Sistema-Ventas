@@ -25,7 +25,7 @@ const TableList = styled.div`
     `
 const Table = styled.table`
     width: 100%;
-      border-collapse: collapse;
+    border-collapse: collapse;
   `;
 
 
@@ -38,6 +38,7 @@ const TableHeader = styled.th`
 
 const TableRow = styled.tr`
   width: auto;
+
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
